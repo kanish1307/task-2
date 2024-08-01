@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #83a4d4, #b6fbff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .todo-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 60%;
+  }
+  
+  input[type="date"], select {
+    width: 18%;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  li.low {
+    background-color: #d4edda;
+  }
+  
+  li.medium {
+    background-color: #ffeeba;
+  }
+  
+  li.high {
+    background-color: #f8d7da;
+  }
+  
+  li.completed {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  li span {
+    flex: 1;
+  }
+  
+  li .buttons {
+    display: flex;
+    gap: 5px;
+  }
+  
+  li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  li button:hover {
+    text-decoration: underline;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .progress-container {
+    margin-top: 20px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 0;
+    height: 20px;
+    background-color: #28a745;
+    transition: width 0.3s;
+  }
+  
